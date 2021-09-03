@@ -48,4 +48,52 @@ html,body{
     left: 300%;
 }
 
- 
+ .slider >div{
+     text-align: center;
+ }
+ .slider h2{
+     color: white !important;
+     font-weight: 400;
+     text-transform: capitalize;
+     font-size: 65px;
+     margin-top: -30px;
+     opacity: 0;
+     transform: translateX(500px);
+
+ }
+ .slider .button{
+     color: white;
+     padding: 12px 50px;
+     background:#ffffff30 ;
+     text-decoration: none;
+     opacity: 0;
+     border-radius: 50px;
+     font-size: 15px;
+     line-height: 30px;
+     display: inline-block;
+     transform: translateX(-500px);
+
+ }
+ .slider .button,
+ .slider h2{
+     transition: opacity 800ms,transform 800ms;
+     transition-delay: 1s;
+ }
+
+ .slider-pagination{
+     position: absolute;
+     bottom: 20px;
+     width: 100%;
+     left: 0;
+     text-align: center;
+     z-index: 1000;
+ }
+ .slider-pagination label{
+     width: 12px;
+     height: 12px;
+     display: inline-block;
+     background-color: #ffffff30;
+     margin: 0 2px;
+     border: 2px solid #ffffff50;
+
+ }
