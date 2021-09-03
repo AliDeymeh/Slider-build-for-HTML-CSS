@@ -95,5 +95,29 @@ html,body{
      background-color: #ffffff30;
      margin: 0 2px;
      border: 2px solid #ffffff50;
-
+    cursor: pointer;
  }
+.slider-radio1:checked ~ .slider{
+    transform: translateX(0%);
+}
+ 
+.slider-radio2:checked ~ .slider{
+    transform: translateX(-100%);
+}
+.slider-radio3:checked ~ .slider{
+    transform: translateX(-200%);
+}
+.slider-radio4:checked ~ .slider{
+    transform: translateX(-300%);
+}
+.slider-radio1:checked ~ .slide1 .button,
+.slider-radio2:checked ~ .slide2 .button,
+.slider-radio3:checked ~ .slide3 .button,
+.slider-radio4:checked ~ .slide4 .button
+.slider-radio1:checked ~ .slide1 h2,
+.slider-radio2:checked ~ .slide2 h2,
+.slider-radio3:checked ~ .slide3 h2,
+.slider-radio4:checked ~ .slide4 h2{
+    transform: translateX(0);
+    opacity: 1;
+}
