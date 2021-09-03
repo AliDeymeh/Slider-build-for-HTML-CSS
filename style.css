@@ -1,0 +1,51 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.css-slider-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: table;
+    overflow: hidden;
+}
+.slider{
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1600ms,transform 1600ms;
+    transform: scale(1);
+}
+.slide1{
+    background: url('1.jpg');
+    background-size: cover;
+    left: 0;
+}
+.slide2{
+    background: url('2.jpg');
+    background-size: cover;
+    left: 100%;
+}
+.slide3{
+    background: url('3.jpg');
+    background-size: cover;
+    left: 200%;
+}
+.slide4{
+    background: url('4.jpg');
+    background-size: cover;
+    left: 300%;
+}
+
+ 
